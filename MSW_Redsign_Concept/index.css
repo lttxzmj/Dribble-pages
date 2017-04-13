@@ -1,0 +1,97 @@
+/*公用样式*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*具体样式*/
+
+.container {
+    margin: 20px auto;
+    padding: 0 30px;
+    font-size: 12px;
+    font-family: system-ui serif;
+}
+
+.nav {
+    margin: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo {
+    margin: 5px 20px 0 5px;
+    text-align: center;
+}
+
+.logo a {
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 0;
+    margin: 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    float: left;
+    margin: 15px;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+
+.nav-list li:hover {
+    color: #FF8C71;
+    border-bottom: 1px solid #FF8C71;
+}
+
+.side {
+    margin: 5px;
+    color: #ccc;
+}
+
+.search-box {
+    vertical-align: middle;
+    position: relative;
+    white-space: nowrap;
+}
+
+.search {
+    width: 30px;
+    height: 25px;
+    float: left;
+    border-radius: 5px;
+    border: none;
+    padding-left: 30px;
+    transition: all .55s ease-in;
+    color: #ccc;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+    margin-top: -8px;
+    z-index: 1;
+}
+
+.search:hover, .search:focus, .search:active {
+    outline: none;
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.search-box:hover .search {
+    width: 150px;
+}
