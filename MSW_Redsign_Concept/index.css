@@ -59,6 +59,8 @@
 .side {
     margin: 5px;
     color: #ccc;
+    height: 30px;
+    line-height: 30px;
 }
 
 .search-box {
@@ -67,11 +69,14 @@
     white-space: nowrap;
 }
 
+.search-box, .nav-guide, .login, .sign-up {
+    margin: 0 10px;
+}
+
 .search {
     width: 30px;
     height: 25px;
     float: left;
-    border-radius: 5px;
     border: none;
     padding-left: 30px;
     transition: all .55s ease-in;
@@ -82,7 +87,7 @@
     position: absolute;
     top: 50%;
     margin-left: 10px;
-    margin-top: -8px;
+    margin-top: -15px;
     z-index: 1;
 }
 
@@ -94,4 +99,36 @@
 
 .search-box:hover .search {
     width: 150px;
+    border: 1px solid #ccc;
+}
+
+.select-box {
+    width: 50px;
+    height: 25px;
+    padding-left: 4px;
+    margin: 0 15px;
+    outline: none;
+    color: #ccc;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    /*   删除默认样式的箭头 */
+    -webkit-appearance: none;
+    background: url(imgs/cart_down_arror.png) 96%/15% no-repeat;
+}
+
+.select-box option {
+    color: #ccc;
+}
+
+.nav-guide {
+    margin: 0 10px;
+}
+
+.login {
+    margin: 0 10px;
+}
+
+.login a, .sign-up a {
+    text-decoration: none;
+    color: #ccc;
 }
