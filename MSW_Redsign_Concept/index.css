@@ -143,7 +143,7 @@
     height: 200px;
     width: 400px;
     top: 20%;
-    left: 20%;
+    left: 10%;
     background-size: cover;
     border: border-box;
 }
@@ -167,7 +167,7 @@
 .show-time {
     position: absolute;
     top: 30%;
-    left: -22%;
+    left: -200px;
     color: #EFEFEF;
     font-size: 12em;
     font-weight: bolder;
@@ -176,13 +176,13 @@
 
 .search-more {
     position: absolute;
-    left: 20%;
+    left: 10%;
     bottom: -10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 600px;
+    width: 500px;
     height: 150px;
     background-color: #00E3A3;
 }
@@ -193,7 +193,7 @@
     font-size: 2em;
     color: #fff;
     font-weight: 300;
-    margin: 20px;
+    margin: 0 0 20px 0;
 }
 
 .search-more-box {
@@ -224,4 +224,84 @@
     border: 1px solid #00A97C;
     color: #fff;
     margin-left: 10px;
+}
+
+.content-container {
+    width: 65%;
+    color: #999;
+    margin: 100px 10px 10px 10px;
+    overflow: hidden;
+}
+
+.content-header {
+    height: 50px;
+    margin: 0;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.content-title {
+    margin: 0;
+    display: inline-block;
+}
+
+.content-select {
+    color: #00E4A4;
+}
+
+.play-video-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-video {
+    height: 350px;
+    width: 600px;
+}
+
+.play-container {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #000;
+    filter: opacity(50%);
+    position: absolute;
+}
+
+
+/* 用伪类解决同一个元素上既要绝对定位又要相对定位的问题,将播放按钮定位到播放器正中间 */
+
+.play-container::after {
+    position: relative;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #fff;
+    border-bottom: 10px solid transparent;
+    z-index: 1000;
+}
+
+.stop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 20px;
+    border-top: 0 solid transparent;
+    border-right: 8px solid #fff;
+    border-bottom: 0 solid transparent;
+    border-left: 8px solid #fff;
+    z-index: 1000;
+    display: none;
 }
