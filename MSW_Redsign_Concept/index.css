@@ -8,6 +8,23 @@
     float: right;
 }
 
+.label {
+    display: block;
+    width: 60px;
+    height: 20px;
+    font-size: 0.9em;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    z-index: 1000;
+}
+
+.show-rotate {
+    transform: rotate(-90deg);
+}
+
 
 /*具体样式*/
 
@@ -171,10 +188,10 @@
     color: #EFEFEF;
     font-size: 12em;
     font-weight: bolder;
-    transform: rotate(-90deg);
 }
 
 .search-more {
+    font-family: fantasy;
     position: absolute;
     left: 10%;
     bottom: -10%;
@@ -189,7 +206,6 @@
 
 .search-title {
     width: 400px;
-    font-family: fantasy;
     font-size: 2em;
     color: #fff;
     font-weight: 300;
@@ -227,10 +243,9 @@
 }
 
 .content-container {
-    width: 65%;
+    width: 64%;
     color: #999;
     margin: 100px 10px 10px 10px;
-    overflow: hidden;
 }
 
 .content-header {
@@ -251,13 +266,15 @@
 }
 
 .play-video-box {
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .play-video {
-    height: 350px;
+    /*     height: 350px;
+ */
     width: 600px;
 }
 
@@ -304,4 +321,108 @@
     border-left: 8px solid #fff;
     z-index: 1000;
     display: none;
+}
+
+.video-container {
+    width: 600px;
+    position: relative;
+    background: #F4F4F4;
+}
+
+.video-label {
+    position: absolute;
+    top: 5%;
+    right: -2px;
+}
+
+.video-tip, .feature-tip {
+    color: #000;
+    word-spacing: 0.5em;
+    width: 200px;
+    height: 20px;
+    margin: 0;
+    z-index: 1000;
+}
+
+.video-tip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -110px;
+    margin-top: 150px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-title, .photo-title {
+    margin: 20px 10px 0 10px;
+    padding: 0;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.video-title {
+    font-size: 1.6rem;
+}
+
+.video-content-abstract {
+    color: #000;
+}
+
+.video-detail, .photo-detail-left, .photo-detail-right, .feature-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-detail-item, .photo-detail-left-item, .photo-detail-right-item.feature-detail-item {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.photo-container {
+    margin: 30px 0;
+}
+
+.photo-title {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.photo-left, .photo-right {
+    width: 295px;
+    margin-right: 10px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-pic-left img, .photo-pic-right img {
+    width: 295px;
+    height: 200px;
+}
+
+.photo-label-left, .photo-label-right {
+    position: absolute;
+    top: 5%;
+    right: -2%;
+}
+
+.photo-title-left, .photo-title-right {
+    margin: 30px 10px 20px 10px;
+}
+
+.photo-detail-left, .photo-detail-right {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }

@@ -13,7 +13,6 @@
             stopVideo.style.display = 'none';
         } else {
             video.pause();
-
             playVideo.style.display = 'none';
             stopVideo.style.display = 'block';
         }
