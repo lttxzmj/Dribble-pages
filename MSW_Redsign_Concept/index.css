@@ -10,8 +10,7 @@
 
 .label {
     display: block;
-    width: 60px;
-    height: 20px;
+    padding: 5px;
     font-size: 0.9em;
     background-color: #000;
     color: #fff;
@@ -265,16 +264,13 @@
     color: #00E4A4;
 }
 
-.play-video-box {
-    width: 600px;
+.play-video-box, .feature-container, .content, .feature-detail, .load-more {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.play-video {
-    /*     height: 350px;
- */
+.play-video, .video-container, .feature-container, .show-feature-photo img {
     width: 600px;
 }
 
@@ -291,7 +287,7 @@
 
 /* 用伪类解决同一个元素上既要绝对定位又要相对定位的问题,将播放按钮定位到播放器正中间 */
 
-.play-container::after {
+.play-container::after, .feature-container {
     position: relative;
 }
 
@@ -323,44 +319,40 @@
     display: none;
 }
 
-.video-container {
-    width: 600px;
-    position: relative;
+.video-container, .photo-left, .photo-right, .feature-container {
     background: #F4F4F4;
 }
 
-.video-label {
+.video-container {
+    position: relative;
+}
+
+.video-label, .photo-label-left, .photo-label-right, .feature-label {
     position: absolute;
     top: 5%;
-    right: -2px;
+    right: -3px;
 }
 
 .video-tip, .feature-tip {
     color: #000;
     word-spacing: 0.5em;
-    width: 200px;
     height: 20px;
     margin: 0;
     z-index: 1000;
 }
 
-.video-tip {
+.video-tip, .feature-tip {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: -110px;
-    margin-top: 150px;
+    top: 30%;
+    left: -15%;
 }
 
 .content {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.video-title, .photo-title {
-    margin: 20px 10px 0 10px;
+.video-title, .photo-title, .feature-title {
+    margin: 30px 10px 20px 10px;
     padding: 0;
     font-family: sans-serif;
     color: #000;
@@ -379,7 +371,7 @@
     flex-direction: row;
 }
 
-.video-detail-item, .photo-detail-left-item, .photo-detail-right-item.feature-detail-item {
+.video-detail-item, .photo-detail-left-item, .photo-detail-right-item, .feature-detail-item {
     margin: 10px;
     padding-bottom: 10px;
 }
@@ -388,15 +380,13 @@
     margin: 30px 0;
 }
 
-.photo-title {
-    margin: 0;
+.photo-title, .feature-title {
     font-size: 1rem;
 }
 
 .photo-left, .photo-right {
     width: 295px;
     margin-right: 10px;
-    background-color: #f4f4f4;
     position: relative;
 }
 
@@ -410,19 +400,25 @@
     height: 200px;
 }
 
-.photo-label-left, .photo-label-right {
-    position: absolute;
-    top: 5%;
-    right: -2%;
-}
-
-.photo-title-left, .photo-title-right {
-    margin: 30px 10px 20px 10px;
+.photo-detail-left, .photo-detail-right {
+    height: 100px;
 }
 
 .photo-detail-left, .photo-detail-right {
-    height: 100px;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.feature-title {
+    text-align: center;
+}
+
+.load-more {
+    background: #25E2A3;
+    color: #fff;
+    font-size: 1.5em;
+    width: 600px;
+    height: 50px;
+    margin: 20px 0;
+    letter-spacing: 0.3em;
 }
