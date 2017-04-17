@@ -28,10 +28,15 @@
 /*具体样式*/
 
 .container {
-    margin: 20px auto;
-    padding: 0 0 5% 10%;
+    /* margin: 20px auto; */
+    /* padding: 0 0 5% 10%; */
     font-size: 12px;
     font-family: system-ui serif;
+}
+
+.nav, .show-content, .content-container {
+    margin: 20px auto;
+    padding: 0 0 5% 10%;
 }
 
 .nav {
@@ -424,7 +429,6 @@
 
 .site-footer {
     display: flex;
-    margin: 0 auto;
     height: 40%;
     width: 100%;
     align-items: center;
@@ -433,7 +437,37 @@
     color: #fff;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .footer-list li a {
     text-decoration: none;
     color: #999999;
+}
+
+.footer-content-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-content-item li {
+    width: 120px;
+    margin: 5px;
+}
+
+.footer-content-company, .footer-content-store {
+    flex-grow: 2;
+}
+
+.footer-content-brands, .footer-content-community {
+    flex-grow: 1;
+}
+
+.footer-content-item span {
+    padding: 10px;
 }
