@@ -1,0 +1,598 @@
+/*公用样式*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.label {
+    display: block;
+    padding: 5px;
+    font-size: 0.9em;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    z-index: 1000;
+}
+
+.show-rotate {
+    transform: rotate(-90deg);
+}
+
+
+/*具体样式*/
+
+.container {
+    /* margin: 20px auto; */
+    /* padding: 0 0 5% 10%; */
+    font-size: 12px;
+    font-family: system-ui serif;
+}
+
+.nav, .show-content, .content-container {
+    padding: 0 0 10px 80px;
+}
+
+.nav {
+    margin: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo {
+    margin: 5px 20px 0 5px;
+    text-align: center;
+}
+
+.logo a {
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 0;
+    margin: 0;
+}
+
+.nav-list, .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li, .footer-list li {
+    float: left;
+    margin: 15px;
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+
+.nav-list li:hover {
+    color: #FF8C71;
+    border-bottom: 1px solid #FF8C71;
+}
+
+.side {
+    margin: 5px;
+    color: ##999999;
+    height: 30px;
+    line-height: 30px;
+}
+
+.search-box {
+    vertical-align: middle;
+    position: relative;
+    white-space: nowrap;
+}
+
+.search-box, .nav-guide, .login, .sign-up {
+    margin: 0 10px;
+}
+
+.search {
+    width: 30px;
+    height: 25px;
+    float: left;
+    border: none;
+    padding-left: 30px;
+    transition: all .55s ease-in;
+    color: #999999;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+    margin-top: -15px;
+    z-index: 1;
+}
+
+.search-icon i {
+    color: #999;
+    transform: scale(1.5, 1.5);
+}
+
+.search:hover, .search:focus, .search:active {
+    outline: none;
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.search-box:hover .search {
+    width: 150px;
+    border: 1px solid #ccc;
+}
+
+.select-box {
+    width: 50px;
+    height: 25px;
+    padding-left: 4px;
+    margin: 0 15px;
+    outline: none;
+    color: #999999;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    /*   删除默认样式的箭头 */
+    -webkit-appearance: none;
+    background: url(imgs/cart_down_arror.png) 96%/15% no-repeat;
+}
+
+.select-box option {
+    color: #ccc;
+}
+
+.login a, .sign-up a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.show-content {
+    position: relative;
+    margin-left: 80px;
+    height: 500px;
+    background: url(imgs/surf.jpg) no-repeat;
+    background-size: cover;
+}
+
+.show-pic {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    top: 20%;
+    left: 10%;
+    background-size: cover;
+}
+
+.show-pic h2 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    height: 100px;
+    width: 400px;
+}
+
+.read-more {
+    width: 100px;
+    height: 30px;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.show-time {
+    position: absolute;
+    top: 30%;
+    left: -180px;
+    color: #EFEFEF;
+    font-size: 12em;
+    font-weight: bolder;
+}
+
+.search-more {
+    font-family: fantasy;
+    position: absolute;
+    left: 10%;
+    bottom: -10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 150px;
+    background-color: #00E3A3;
+}
+
+.search-title {
+    width: 400px;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.search-more-box {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    position: relative;
+}
+
+.search-more-input {
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+
+.search-more-icon i {
+    color: #999999;
+    transform: scale(1.5, 1.5);
+}
+
+.search-more-btn {
+    width: 120px;
+    height: 40px;
+    background: #00A97C;
+    border: 1px solid #00A97C;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.content-container {
+    color: #999;
+    margin: 100px 10px 10px 10px;
+}
+
+.content-header {
+    height: 50px;
+    margin: 0;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.content-title {
+    margin: 0;
+    display: inline-block;
+}
+
+.content-select {
+    color: #00E4A4;
+}
+
+.play-video-box, .feature-container, .content, .feature-detail, .load-more, .content-side, .pro, .adv, .site-footer, .adv-detail-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-video, .video-container, .feature-container, .show-feature-photo img {
+    width: 600px;
+}
+
+.play-container {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #000;
+    filter: opacity(50%);
+    position: absolute;
+}
+
+
+/* 用伪类解决同一个元素上既要绝对定位又要相对定位的问题,将播放按钮定位到播放器正中间 */
+
+.play-container::after, .feature-container {
+    position: relative;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #fff;
+    border-bottom: 10px solid transparent;
+    z-index: 1000;
+}
+
+.stop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 20px;
+    border-top: 0 solid transparent;
+    border-right: 8px solid #fff;
+    border-bottom: 0 solid transparent;
+    border-left: 8px solid #fff;
+    z-index: 1000;
+    display: none;
+}
+
+.video-container, .photo-left, .photo-right, .feature-container {
+    background: #F4F4F4;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-label, .photo-label-left, .photo-label-right, .feature-label {
+    position: absolute;
+    top: 5%;
+    right: -3px;
+}
+
+.video-tip, .feature-tip {
+    color: #000;
+    word-spacing: 0.5em;
+    height: 20px;
+    margin: 0;
+    z-index: 1000;
+}
+
+.video-tip, .feature-tip {
+    position: absolute;
+    top: 30%;
+    left: -15%;
+}
+
+.content {
+    flex-direction: column;
+}
+
+.video-title, .photo-title, .feature-title {
+    margin: 30px 10px 20px 10px;
+    padding: 0;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.video-title {
+    font-size: 1.6rem;
+}
+
+.video-content-abstract, .photo-title-abstract {
+    color: #000;
+}
+
+.video-detail, .photo-detail-left, .photo-detail-right, .feature-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-detail-item, .photo-detail-left-item, .photo-detail-right-item, .feature-detail-item {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.photo-container {
+    margin: 30px 0;
+}
+
+.photo-title, .feature-title {
+    font-size: 1rem;
+}
+
+.photo-title-abstract {
+    margin-left: 10px;
+}
+
+.photo-left, .photo-right {
+    width: 295px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-pic-left img, .photo-pic-right img {
+    width: 295px;
+    height: 200px;
+}
+
+.photo-detail-left, .photo-detail-right {
+    height: 100px;
+}
+
+.photo-detail-left, .photo-detail-right {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.feature-title {
+    text-align: center;
+}
+
+.load-more {
+    background: #25E2A3;
+    color: #fff;
+    font-size: 1.5em;
+    width: 600px;
+    height: 50px;
+    margin: 20px 0;
+    letter-spacing: 0.3em;
+}
+
+.content-side, .pro, .adv, .adv-detail-top {
+    flex-direction: column;
+}
+
+.content-side {
+    width: 400px;
+    margin: 30px 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logo-title {
+    position: relative;
+    z-index: 1;
+}
+
+.logo-title span {
+    font-family: monospace;
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    word-break: break-all;
+    text-align: center;
+}
+
+.logo-title::before {
+    content: '';
+    width: 180px;
+    height: 180px;
+    border: 20px solid #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+}
+
+.pro-content {
+    margin-top: 70px;
+}
+
+.pro-btn, .buy-btn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.pro-btn {
+    background: #00E3A4;
+}
+
+.adv-detail-top {
+    margin: 30px 0;
+    border: 20px solid #F5F5F5;
+    height: 400px;
+    padding: 10px;
+}
+
+.adv-photo img {
+    width: 150px;
+    height: 150px;
+}
+
+.buy-btn {
+    background: #FF5B37;
+    text-align: center;
+}
+
+.adv-detail-bottom {
+    position: relative;
+    height: 300px;
+    text-align: left;
+    margin: 50px;
+}
+
+.adv-content-bottom {
+    font-size: 2em;
+}
+
+.adv-content-bottom strong {
+    font-size: 2.5em;
+}
+
+.adv-detail-bottom-info {
+    width: 100px;
+}
+
+.adv-detail-bottom-pic {
+    width: 200px;
+    height: 300px;
+}
+
+.adv-detail-bottom-pic img {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    top: -50px;
+    left: 60px;
+    z-index: -1;
+}
+
+.site-footer {
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    background: #1A1A1A;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.footer-list li a, .copyright {
+    color: #999999;
+}
+
+.footer-list li a {
+    text-decoration: none;
+}
+
+.footer-content-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.footer-content-item li {
+    width: 100px;
+    margin: 5px;
+}
+
+.footer-content-company, .footer-content-store {
+    width: 250px;
+}
+
+.footer-content-brands, .footer-content-community {
+    width: 150px;
+}
+
+.footer-content-community li {
+    width: auto;
+    display: inline;
+}
+
+.footer-content-item span {
+    padding: 5px;
+}
+
+.footer-info {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    border-top: 1px solid #999;
+    margin: 10px;
+    text-align: center;
+}
+
+r;
+
+}
